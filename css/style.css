@@ -3,11 +3,6 @@ body{
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
 }
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
 .header {
 	position: fixed;
 	min-width: 100%;
@@ -17,8 +12,11 @@ body{
 	background-color: #fff;
 	border-bottom: 5px solid #fad027;
 }
-.container__logo {	
-	float: left;
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
 }
 .logo__top {
 	font-size: 20px;
@@ -37,9 +35,7 @@ body{
 	font-size: 35px;
 }
 .container__menu {
-	float: right;
 	font-size: 14px;
-	padding-top: 10px;
 }
 .container {
 	min-width: 100px;
@@ -55,7 +51,6 @@ body{
 .menu__item {
 	display: inline-block;
 	margin-right: 35px;
-	font-size: inherit;
 }
 .menu__item:last-child {
 	margin-right: 0;
@@ -85,7 +80,9 @@ body{
 	background-color: #0091be;
 }
 .banner__container {
-    text-align: center;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .banner__logo {
 	display: inline-block;
@@ -94,10 +91,7 @@ body{
 	
 }
 .banner__slogan {
-	display: inline-block;
-	vertical-align: middle;
 	margin-left: 45px;
-	text-align: left;
 	color: #fff;
     font-style: italic;
 	font-size: 35px;
@@ -119,22 +113,19 @@ body{
 }
 .section__content {
 	padding-bottom: 45px;
+	display: flex;
+	justify-content: space-between;
 }
 .content__about {
-	float: left;
-	width: 600px;
-	vertical-align: top;
+	width: 565px;
 }
 .content__text {
 	margin: 0;
 	line-height: 30px;
 }
 .content__status {
-	float: right;
 	width: 570px;
-	vertical-align: top;
 }
-
 .status__shape {
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -170,13 +161,14 @@ body{
 }
 .section__box {
 	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .project {
-	margin-right: 7px;
 	margin-bottom: 15px;
 	position: relative;
 	text-decoration: none;
-	display: inline-block;
 }
 .project:hover .project__insert {
 	background-color: #0091be;
@@ -203,10 +195,13 @@ body{
 }
 .column__title {
 	padding-top: 25px;
-	max-width: 600px;
+	max-width: 576px;
 }
 .column__container {
 	margin-top: 20px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 .column__image {
 	margin-bottom: 25px;
@@ -217,10 +212,7 @@ body{
 	margin-bottom: 50px;
 }
 .column__date {
-	width: 120px;
-	display: inline-block;
-	margin-right: 45px;
-	vertical-align: top;
+	margin-right: 65px;
 }
 .column__day {
 	width: 120px;
@@ -246,9 +238,6 @@ body{
 	padding-left: 45px;
 	color: #fff;
 }
-.news__author {
-	display: inline-block;
-}
 .author__name {
 	font-size: 13px;
 }
@@ -261,9 +250,6 @@ body{
 	margin: 0;
 	padding-left: 15px;
 	padding-bottom: 15px;
-}
-.news__tags {
-	float: right;
 }
 .tag__names {
 	display: inline-block;
@@ -287,22 +273,14 @@ body{
 
 .column__second {
 	float: left;
-	vertical-align: top;
 }
 .text {
 	width: 470px;
 	margin: 0;
 	line-height: 30px;
 }
-.column__text {
-	display: inline-block;
-	vertical-align: top;
-}
 .column__date-sec {
 	width: 50px;
-	display: inline-block;
-	margin-right: 30px;
-	vertical-align: top;
 }
 .column__day-sec {
 	width: inherit;
@@ -329,7 +307,6 @@ body{
 }
 .column__last {
 	float: right;
-	vertical-align: top;
 }
 
 .tag__link1 {
@@ -342,7 +319,8 @@ body{
 	color: #eee;
 }
 .column__access {
-	width: 576px;
+	display: flex;
+	justify-content: space-between;
 }
 .map {
 	min-width: 1200px;
@@ -356,12 +334,8 @@ body{
 .footer__container {
 	font-size: 14px;
 	color: #fff;
-}
-.element__right {
-	float: right;
-}
-.element__left {
-	float: left;
+	display: flex;
+	justify-content: space-between;
 }
 .link__developer {
 	color: inherit;
