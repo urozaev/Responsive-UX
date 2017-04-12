@@ -15,13 +15,12 @@ body{
 .header__container {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
 	align-items: center;
 }
-.logo__top {
+.logo-elem1 {
 	font-size: 24px;
 }
-.logo__bottom {
+.logo-elem2 {
 	display: block;
 	font-size: 16px;
 	color: #0091be;
@@ -31,10 +30,8 @@ body{
 	font-weight: 400;
 	margin: 0;
 }
-.section__title {
-	font-size: 35px;
-}
-.header__menu {
+
+.menu {
 	font-size: 16px;
 }
 .container {
@@ -43,15 +40,15 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.menu{
+.menu-list{
 	padding-left: 0;
 	margin: 0;
 }
-.menu__item {
+.menu-list__item {
 	display: inline-block;
 	margin-right: 35px;
 }
-.menu__item:last-child {
+.menu-list__item:last-child {
 	margin-right: 0;
 }
 .link {
@@ -83,19 +80,19 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.banner__logo {
+.logo-html5 {
 	display: inline-block;
 	height: 250px;
 	vertical-align: middle;
 	
 }
-.banner__slogan {
+.slogan {
 	margin-left: 45px;
 	color: #fff;
     font-style: italic;
 	font-size: 35px;
 }
-.banner__second {
+.slogan__elem2 {
 	display: block;
 }
 .section {
@@ -104,28 +101,31 @@ body{
 	box-shadow: inset 0 -10px 20px 0px #eee;
 }
 
-.section__header {
+.section-header {
 	border-bottom: 2px solid #eee;
 	padding-bottom: 25px;
 	padding-top: 55px;
 	margin-bottom: 55px;
 }
-.section__content {
+.section-header__title {
+	font-size: 35px;
+}
+.content {
 	padding-bottom: 45px;
 	display: flex;
 	justify-content: space-between;
 }
-.content__about {
+.post__description {
 	width: 565px;
 }
-.content__text {
+.post__description__text {
 	margin: 0;
 	line-height: 30px;
 }
-.content__status {
+.status-box {
 	width: 570px;
 }
-.status__shape {
+.progress-bar__status {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	background-color: #eee;
@@ -136,22 +136,22 @@ body{
 .status {
 	border-radius: 0 5px 5px 0;
 }
-.status__name {
+.progress-bar__name {
 	font-weight: bold;
 }
-.status__level1 {
+.progress-bar__status1 {
 	width: 90%;
 	height: 25px;
 	background-color: #0091be;
 	animation: progress 3s ease-in-out 0s 1 normal;
 }
-.status__level2 {
+.progress-bar__status2 {
 	width: 81%;
 	height: 25px;
 	background-color: #40c95d;
 	animation: progress 3s ease-in-out 0s 1 normal;
 }
-.status__level3 {
+.progress-bar__status3 {
 	width: 94%;
 	height: 25px;
 	background-color: #d7d93f;
@@ -161,7 +161,7 @@ body{
 	0% { width: 0%; }
 	10% { width: 0%; }
 }
-.section__box {
+.section__project {
 	font-size: 0;
 }
 .project {
@@ -171,11 +171,11 @@ body{
 	position: relative;
 	text-decoration: none;
 }
-.project:hover .project__insert {
+.project:hover .project-insert {
 	background-color: #0091be;
 	opacity: 1;
 }
-.project__insert {
+.project-insert {
 	opacity: 0;
 	width: 100%;
 	height: 100%;
@@ -185,7 +185,7 @@ body{
 	transition: opacity .5s ease-out;
 }
 
-.project__lable {
+.project-insert__lable {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -209,10 +209,10 @@ body{
 	min-width: 100px;
 	max-width: 100%;
 }
-.column__major {
+.major-post {
 	margin-bottom: 50px;
 }
-.column__date {
+.date {
 	margin-right: 65px;
 }
 .column__day {
@@ -252,27 +252,27 @@ body{
 	padding-left: 15px;
 	padding-bottom: 15px;
 }
-.tag__names {
+.tags {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 }
-.tags {
+.tag-names {
 	display: inline-block;
 	background-color: #0091be;
 	padding-left: 5px;
 	padding-right: 5px;
 }
-.tag__link {
+.tag-names__link {
 	text-decoration: none;
 	color: #fff;
 	transition: color .3s ease-in-out .1s;
 }
-.tag__link:hover {
+.tag-names__link:hover {
 	color: #eee;
 }
 
-.column__second {
+.secondary-post {
 	float: left;
 }
 .text {
@@ -280,7 +280,7 @@ body{
 	margin: 0;
 	line-height: 30px;
 }
-.column__date-sec {
+.date-sec {
 	width: 50px;
 }
 .column__day-sec {
@@ -306,7 +306,7 @@ body{
 	padding-left: 11px;
 	color: #fff;
 }
-.column__last {
+.last-post {
 	float: right;
 }
 
