@@ -1,16 +1,16 @@
 body{
 	margin: 0;
 	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 1rem;
 }
 .header {
 	position: fixed;
 	min-width: 100%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	z-index: 9999;
 	background-color: #fff;
-	border-bottom: 5px solid #fad027;
+	border-bottom: 0.35rem solid #fad027;
 }
 .header__container {
 	display: flex;
@@ -18,28 +18,26 @@ body{
 	align-items: center;
 }
 .logo-elem1 {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 .logo-elem2 {
 	display: block;
-	font-size: 16px;
 	color: #0091be;
 }
 .title {
-	font-size: 30px;
+	font-size: 1.9rem;
 	font-weight: 400;
 	margin: 0;
 }
 
 .menu {
 	width: 315px;
-	font-size: 16px;
 }
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
 }
 .menu-list{
 	padding-left: 0;
@@ -47,7 +45,7 @@ body{
 }
 .menu-list__item {
 	display: inline-block;
-	margin-right: 35px;
+	margin-right: 2.2rem;
 }
 .menu-list__item:last-child {
 	margin-right: 0;
@@ -62,8 +60,8 @@ body{
 	color: #0091be;
 }
 *:focus {
-	outline: double 4px #fad027;
-	outline-offset: 4px;
+	outline: double 0.25rem #fad027;
+	outline-offset: 0.25rem;
 }
 .clear:after {
     content: "";
@@ -72,8 +70,8 @@ body{
 }
 .banner {
 	min-width: 1200px;
-	padding-top: 130px;
-	padding-bottom: 50px;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
 	background-color: #0091be;
 }
 .banner__container {
@@ -82,31 +80,31 @@ body{
 	align-items: center;
 }
 .slogan {
-	margin-left: 45px;
+	margin-left: 2.8rem;
 	color: #fff;
     font-style: italic;
-	font-size: 35px;
+	font-size: 2.2rem;
 }
 .slogan__elem2 {
 	display: block;
 }
 .section {
 	min-width: 1200px;
-	border-bottom: 3px solid #eee;
-	box-shadow: inset 0 -10px 20px 0px #eee;
+	border-bottom: 0.25rem solid #eee;
+	box-shadow: inset 0 -0.7rem 2rem #eee;
 }
 
 .section-header {
-	border-bottom: 2px solid #eee;
-	padding-bottom: 25px;
-	padding-top: 55px;
-	margin-bottom: 55px;
+	border-bottom: 0.12rem solid #eee;
+	padding-bottom: 2rem;
+	padding-top: 3.45rem;
+	margin-bottom: 3.45rem;
 }
 .section-header__title {
-	font-size: 35px;
+	font-size: 2.2rem;
 }
 .content {
-	padding-bottom: 45px;
+	padding-bottom: 2.8rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -115,28 +113,28 @@ body{
 }
 .post__description__text {
 	margin: 0;
-	line-height: 30px;
+	line-height: 1.8rem;
 }
 .status-box {
 	width: 570px;
 }
 .progress-bar__status {
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 0.6rem;
+	margin-bottom: 1.25rem;
 	background-color: #eee;
 	width: 100%;
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 0.4rem 0.4rem 0;
 	overflow: hidden;
 }
 .status {
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 0.4rem 0.4rem 0;
 }
 .progress-bar__name {
 	font-weight: bold;
 }
 .progress-bar__status1 {
 	width: 90%;
-	height: 25px;
+	height: 1.6rem;
 	background-color: #0091be;
 	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
 }
@@ -147,13 +145,13 @@ body{
 }
 .progress-bar__status2 {
 	width: 81%;
-	height: 25px;
+	height: 1.6rem;
 	background-color: #40c95d;
 	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
 }
 .progress-bar__status3 {
 	width: 94%;
-	height: 25px;
+	height: 1.6rem;
 	background-color: #d7d93f;
 	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
 }
@@ -161,8 +159,8 @@ body{
 	font-size: 0;
 }
 .project {
-	margin-bottom: 13px;
-	margin-right: 16px;
+	margin-bottom: 0.8rem;
+	margin-right: 0.6rem;
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
@@ -180,7 +178,7 @@ body{
 	height: 100%;
 	position: absolute;
 	top: 0;
-	font-size: 16px;
+	font-size: 1rem;
 	transition: opacity .5s ease-out;
 }
 
@@ -197,7 +195,7 @@ body{
 	max-width: 576px;
 }
 .column__container {
-	margin-top: 20px;
+	margin-top: 1.25rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -207,42 +205,42 @@ body{
 	max-width: 1200px;
 }
 .column__image {
-	margin-bottom: 25px;
+	margin-bottom: 1.5rem;
 	min-width: 100px;
 	max-width: 100%;
 }
 .major-post {
-	margin-bottom: 50px;
+	margin-bottom: 3.12rem;
 }
 .date {
-	margin-right: 65px;
+	margin-right: 4.06rem;
 }
 .column__day {
 	width: 120px;
-	height: 45px;
+	height: 2.81rem;
 	background-color: #eee;
 	display: table;
 }
 .day{
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 50px;
+	padding-left: 3.12rem;
 }
 .column__month {
 	width: 120px;
-	height: 25px;
+	height: 1.5rem;
 	background-color: #0091be;
 	display: table;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 .month {
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 45px;
+	padding-left: 2.8rem;
 	color: #fff;
 }
 .author__name {
-	font-size: 13px;
+	font-size: 0.87rem;
 }
 .column__news {
 	width: 1010px;
@@ -251,8 +249,8 @@ body{
 }
 .news__text {
 	margin: 0;
-	padding-left: 15px;
-	padding-bottom: 15px;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
 }
 .tags {
 	display: inline-block;
@@ -262,8 +260,8 @@ body{
 .tag-names {
 	display: inline-block;
 	background-color: #0091be;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 0.31rem;
+	padding-right: 0.31rem;
 }
 .tag-names__link {
 	text-decoration: none;
@@ -280,32 +278,32 @@ body{
 .text {
 	width: 470px;
 	margin: 0;
-	line-height: 30px;
+	line-height: 1.87rem;
 }
 .date-sec {
 	width: 50px;
 }
 .column__day-sec {
 	width: inherit;
-	height: 35px;
+	height: 2.2rem;
 	background-color: #eee;
 	display: table;
 }
 .day-sec {
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 22px;
+	padding-left: 1.28rem;
 }
 .column__month-sec {
 	width: inherit;
-	height: 25px;
+	height: 1.5rem;
 	background-color: #0091be;
 	display: table;
 }
 .month-sec {
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 11px;
+	padding-left: 0.65rem;
 	color: #fff;
 }
 .last-post {
@@ -315,7 +313,7 @@ body{
 .tag__link1 {
 	text-decoration: none;
 	color: #fff;
-	font-size: 14px;
+	font-size: 0.87rem;
 	transition: color .3s ease-in-out .1s;
 }
 .tag__link1:hover {
@@ -324,7 +322,7 @@ body{
 .column__access {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 25px;
+	margin-bottom: 1.5rem;
 	max-width: 576px;
 }
 .column__access:nth-of-type(2) {
@@ -336,11 +334,11 @@ body{
 .footer {
 	min-width: 1200px;
 	background-color: #3c3838;
-	padding-top: 30px;
-	padding-bottom: 25px;
+	padding-top: 1.87rem;
+	padding-bottom: 1.5rem;
 }
 .footer__container {
-	font-size: 14px;
+	font-size: 0.87rem;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
