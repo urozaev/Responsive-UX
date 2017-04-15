@@ -32,6 +32,7 @@ body{
 }
 
 .menu {
+	width: 315px;
 	font-size: 16px;
 }
 .container {
@@ -79,12 +80,6 @@ body{
     display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.logo-html5 {
-	display: inline-block;
-	height: 250px;
-	vertical-align: middle;
-	
 }
 .slogan {
 	margin-left: 45px;
@@ -143,33 +138,37 @@ body{
 	width: 90%;
 	height: 25px;
 	background-color: #0091be;
-	animation: progress 3s ease-in-out 0s 1 normal;
+	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
+}
+@keyframes progress{
+    0% { transform: translate3d(-100%,0,0); }
+	30% { background-color: #000; }
+    100% { transform: translate3d(0,0,0); }
 }
 .progress-bar__status2 {
 	width: 81%;
 	height: 25px;
 	background-color: #40c95d;
-	animation: progress 3s ease-in-out 0s 1 normal;
+	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
 }
 .progress-bar__status3 {
 	width: 94%;
 	height: 25px;
 	background-color: #d7d93f;
-	animation: progress 3s ease-in-out 0s 1 normal;
-}
-@keyframes progress {
-	0% { width: 0%; }
-	10% { width: 0%; }
+	animation: progress 3s ease-in-out 1s 2 alternate-reverse;
 }
 .section__project {
 	font-size: 0;
 }
 .project {
-	margin-bottom: 10px;
-	margin-right: 7px;
+	margin-bottom: 13px;
+	margin-right: 16px;
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
+}
+.project:nth-child(4n+4) {
+	margin: 0;
 }
 .project:hover .project-insert {
 	background-color: #0091be;
@@ -195,7 +194,6 @@ body{
 	color: #fff;
 }
 .column__title {
-	padding-top: 25px;
 	max-width: 576px;
 }
 .column__container {
@@ -322,6 +320,7 @@ body{
 .column__access {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 25px;
 }
 .map {
 	min-width: 1200px;
