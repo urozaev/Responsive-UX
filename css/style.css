@@ -143,7 +143,8 @@ body{
 }
 @keyframes progress{
     0% { transform: translate3d(-100%,0,0); }
-	30% { background-color: #000; }
+	10% { background-color: #3c3838; }
+	30% { background-color: #3c3838; }
     100% { transform: translate3d(0,0,0); }
 }
 .progress-bar__status2 {
