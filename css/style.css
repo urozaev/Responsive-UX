@@ -311,8 +311,8 @@ body{
 .tag-names {
 	display: inline-block;
 	background-color: #0091be;
-	padding-left: 0.31rem;
-	padding-right: 0.31rem;
+	padding: 0 0.31rem;
+	margin: 0.31rem 0;
 }
 .tag-names__link {
 	text-decoration: none;
@@ -340,6 +340,7 @@ body{
 .column__access {
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 	margin-bottom: 1.5rem;
 }
 .column__access:nth-of-type(2) {
