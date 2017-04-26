@@ -53,6 +53,32 @@ body{
 	padding-left: 0.6rem;
 	padding-right: 0.6rem;
 }
+.menu {
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 960px) {
+	.menu__list {
+		display: none;
+	}
+}
+.menu-button {
+	background: url(../images/burger.svg) no-repeat;
+	width: 1.8rem;
+	height: 2rem;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	right: 3%;
+	padding: 0;
+	display: none;
+}
+@media screen and (max-width: 960px) {
+	.menu-button {
+		display: flex;
+	}
+}
 .menu__list{
 	padding-left: 0;
 	margin: 0;
