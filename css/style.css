@@ -64,10 +64,16 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
+
+.header__logo {
+	margin: 0;
+}
+
 .header__logo-name {
 	font-size: 2.4rem;
 }
 .header__logo-lable {
+	font-size: 1.6rem;
 	display: block;
 	color: #0091be;
 }
@@ -79,8 +85,8 @@ body{
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding-left: 0.9rem;
-	padding-right: 0.9rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .menu {
 	display: flex;
@@ -399,45 +405,55 @@ body{
 	background: url(../images/tags.svg)
 	no-repeat;
 	background-size: contain;
+	display: inline-block;
 }
+
 .user {
 	width: 17px;
 	height: 17px;
 	background: url(../images/user.svg)
 	no-repeat;
 	background-size: contain;
+	display: inline-block;
 }
+
 .column__access {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2.4rem;
 }
+
 @media screen and (max-width: 960px) {
 	.column__access {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 }
+
 .secondary-post {
 	width: 48.5%;
 	margin-right: 1.5%;
 	margin-top: 4.9rem;
 }
+
 .text {
 	margin: 0;
 	line-height: 2.9rem;
 }
+
 .date-sec {
 	width: 50px;
 	margin-right: 2.4rem;
 }
+
 .column__day-sec {
 	width: inherit;
 	height: 3.5rem;
 	background-color: #eee;
 	display: table;
 }
+
 .day-sec {
 	display: table-cell;
 	vertical-align: middle;
