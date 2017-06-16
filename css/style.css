@@ -98,6 +98,7 @@ body{
 	}
 }
 .menu__button {
+	font-size: 0;
 	background: url(../images/burger.svg) no-repeat;
 	width: 2.8rem;
 	height: 3.2rem;
@@ -178,7 +179,7 @@ body{
 	padding-top: 5.5rem;
 	margin-bottom: 3.5rem;
 }
-.section-header__title {
+.section__title {
 	font-size: 3.5rem;
 }
 .content {
@@ -190,17 +191,17 @@ body{
 		flex-direction: column;
 	}
 }
-.post__description {
+.post-description {
 	width: 50%;
 	margin-right: 1.6rem;
 }
 @media screen and (max-width: 960px){
-	.post__description{
+	.post-description{
 		width: 100%;
 		margin-right: 0;
 	}
 }
-.post__description__text {
+.post-description__text {
 	margin: 0;
 	line-height: 2.8rem;
 }
@@ -228,42 +229,42 @@ body{
 	font-weight: bold;
 }
 .progress-bar__status1 {
-	width: 90%;
+	transform: translate(-10%, 0);
 	height: 2.5rem;
 	background-color: #0091be;
-	animation: progress;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
-	animation-delay: 1s;
-	animation-direction: normal;
+	animation: progress 3s ease-in-out 1s normal;
 }
+
+.progress-bar__status2 {
+	transform: translate(-19%, 0);
+	height: 2.5rem;
+	background-color: #40c95d;
+	animation: progress 3s ease-in-out 1s normal;
+}
+
+.progress-bar__status3 {
+	transform: translate(-6%, 0);
+	height: 2.5rem;
+	background-color: #d7d93f;
+	animation: progress 3s ease-in-out 1s normal;
+}
+
 @keyframes progress {
 	0% {
-		width: 0;
 		background-color: #fff;
+		transform: translate(-100%, 0);
 	}
 	20% {
 		background-color: #fff;
 	}
 }
-.progress-bar__status2 {
-	width: 81%;
-	height: 2.5rem;
-	background-color: #40c95d;
-	animation: progress 3s ease-in-out 1s 1 normal;
-}
-.progress-bar__status3 {
-	width: 94%;
-	height: 2.5rem;
-	background-color: #d7d93f;
-	animation: progress 3s ease-in-out 1s 1 normal;
-}
+
 .section__project {
 	font-size: 0;
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .project {
 	width: 23%;
 	margin-bottom: 2.6%;
@@ -271,9 +272,11 @@ body{
 	position: relative;
 	text-decoration: none;
 }
+
 .project:nth-of-type(4n+4) {
 	margin-right: 0;
 }
+
 @media screen and (max-width: 960px) {
 	.project {
 		width: 31%;
@@ -286,6 +289,7 @@ body{
 		margin-right: 0;
 	}
 }
+
 @media screen and (max-width: 480px) {
 	.project {
 		width: 49%;
@@ -301,13 +305,16 @@ body{
 		margin-right: 0;
 	}
 }
+
 .project:hover .project-insert {
 	background-color: #0091be;
 	opacity: 1;
 }
+
 .project__image {
 	width: 100%;
 }
+
 .project-insert {
 	opacity: 0;
 	width: 100%;
@@ -317,6 +324,7 @@ body{
 	font-size: 1.6rem;
 	transition: opacity .5s ease-out;
 }
+
 .project-insert__lable {
 	color: #fff;
 	position: absolute;
@@ -324,80 +332,98 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 .lable {
 	color: #fff;
 }
+
 .column {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .column__container {
 	margin-top: 2rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
 }
+
 .column__container:nth-of-type(1) {
 	max-width: 100%;
 }
+
 .column__image {
 	margin-bottom: 2.4rem;
 	width: 100%;
 }
+
 .date {
 	margin-right: 3.2rem;
 	display: flex;
 	flex-direction: column;
 }
+
 .date:first-child {
 	width: 25%;
 }
+
 .column__day {
 	background-color: #eee;
 	text-align: center;
 	padding: 1.6rem 0.8rem;
 }
+
 .column__month {
 	background-color: #0091be;
 	margin-bottom: 2rem;
 	text-align: center;
 	padding: 0.8rem;
 }
+
 .month {
 	color: #fff;
 }
+
 .author__name {
 	font-size: 1.3rem;
 }
+
 .column__news {
 	width: 1010px;
 	display: inline-block;
 	vertical-align: top;
 }
+
 .news__text {
 	margin: 0;
 	padding-left: 1.6rem;
 	padding-bottom: 1.6rem;
 }
+
 .tags {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 }
+
 .tag-names {
 	display: inline-block;
 	background-color: #0091be;
 	padding: 0 0.4rem;
 	margin: 0.4rem 0;
 }
+
 .tag-names__link {
 	text-decoration: none;
 	color: #fff;
 	transition: color .3s ease-in-out .1s;
 }
+
 .tag-names__link:hover {
 	color: #eee;
 }
+
 .tag__image {
 	width: 17px;
 	height: 17px;
@@ -502,7 +528,10 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
-.link__developer {
-	color: inherit;
+.link-developer {
+	color: #0091be;
 	text-decoration: none;
+}
+.link-developer:hover {
+	color: #fff;
 }
