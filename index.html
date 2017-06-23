@@ -6,6 +6,7 @@
   <title>Responsive UX</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/hamburgers.css">
 </head>
 <body>
     <header class="header">
@@ -15,7 +16,11 @@
 			    <span class="header__logo-lable">template</span>
 		    </h1>
 		    <nav class="menu header__menu">
-          <button class="menu__button" aria-label="menu" aria-controls="navigation">Открыть меню</button>
+          <button class="menu-hamburger menu-hamburger--collapse is active" aria-label="menu" aria-controls="navigation">
+            <span class="menu-hamburger__box">
+              <span class="menu-hamburger__inner"></span>
+            </span>
+          </button>
 				  <ul class="menu__list">
 				    <li class="menu__list-item">
 					   <a href="#0" class="link">About</a>

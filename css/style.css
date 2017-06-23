@@ -53,8 +53,8 @@ body{
 .header {
 	position: fixed;
 	min-width: 100%;
-	padding-top: 1.6rem;
-	padding-bottom: 1.6rem;
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
 	z-index: 9999;
 	background-color: #fff;
 	border-bottom: 0.5rem solid #fad027;
@@ -67,6 +67,8 @@ body{
 
 .header__logo {
 	margin: 0;
+	font-size: 0;
+	font-weight: 400;
 }
 
 .header__logo-name {
@@ -98,7 +100,7 @@ body{
 		display: none;
 	}
 }
-.menu__button {
+/*.menu-hamburger {
 	font-size: 0;
 	background: url(../images/burger.svg) no-repeat;
 	width: 2.8rem;
@@ -111,11 +113,38 @@ body{
 	padding: 0;
 	display: none;
 }
+*/
 @media screen and (max-width: 960px) {
-	.menu__button {
+	.menu-hamburger {
 		display: flex;
 	}
 }
+
+.menu-hamburger--collapse .menu-hamburger__inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .menu-hamburger--collapse .menu-hamburger__inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .menu-hamburger--collapse .menu-hamburger__inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.menu-hamburger--collapse.is-active .menu-hamburger__inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .menu-hamburger--collapse.is-active .menu-hamburger__inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+  .menu-hamburger--collapse.is-active .menu-hamburger__inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
 .menu__list{
 	padding-left: 0;
 	margin: 0;
@@ -324,6 +353,22 @@ body{
 	top: 0;
 	font-size: 1.6rem;
 	transition: opacity .5s ease-out;
+}
+@media screen and (min-width: 960px){
+	.project__insert {
+		font-size: 1.4rem;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 565px) {
+	.project__insert {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.project__insert {
+		font-size: 1.2rem;
+	}
 }
 
 .project__lable {
