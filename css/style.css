@@ -83,13 +83,13 @@ body{
 	align-items: center;
 }
 
-#nav-icon2 {
+#menu-hamburger__icon {
 	width: 3rem;
 	position: relative;
 	height: 3.2rem;
 }
 
-#nav-icon2 span {
+#menu-hamburger__icon span {
   display: block;
   position: absolute;
   height: 0.6rem;
@@ -106,68 +106,68 @@ body{
   transition: .25s ease-in-out;
 }
 
-#nav-icon2 span:nth-child(even) {
+#menu-hamburger__icon span:nth-child(even) {
   left: 50%;
   border-radius: 0 0.9rem 0.9rem 0;
 }
 
-#nav-icon2 span:nth-child(odd) {
+#menu-hamburger__icon span:nth-child(odd) {
   left:0;
   border-radius: 0.9rem 0 0 0.9rem;
 }
 
-#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+#menu-hamburger__icon span:nth-child(1), #menu-hamburger__icon span:nth-child(2) {
   top: 0;
 }
 
-#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+#menu-hamburger__icon span:nth-child(3), #menu-hamburger__icon span:nth-child(4) {
   top: 1.2rem;
 }
 
-#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+#menu-hamburger__icon span:nth-child(5), #menu-hamburger__icon span:nth-child(6) {
   top: 2.4rem;
 }
 
-#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+#menu-hamburger__icon.open span:nth-child(1),#menu-hamburger__icon.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+#menu-hamburger__icon.open span:nth-child(2),#menu-hamburger__icon.open span:nth-child(5) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon2.open span:nth-child(1) {
+#menu-hamburger__icon.open span:nth-child(1) {
   left: 0.5rem;
   top: 0.7rem;
 }
 
-#nav-icon2.open span:nth-child(2) {
+#menu-hamburger__icon.open span:nth-child(2) {
   left: calc(50% - 5px);
   top: 0.7rem;
 }
 
-#nav-icon2.open span:nth-child(3) {
+#menu-hamburger__icon.open span:nth-child(3) {
   left: -50%;
   opacity: 0;
 }
 
-#nav-icon2.open span:nth-child(4) {
+#menu-hamburger__icon.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
 
-#nav-icon2.open span:nth-child(5) {
+#menu-hamburger__icon.open span:nth-child(5) {
   left: 0.5rem;
   top: 2.9rem;
 }
 
-#nav-icon2.open span:nth-child(6) {
+#menu-hamburger__icon.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 2.9rem;
 }
